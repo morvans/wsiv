@@ -24,7 +24,7 @@ var SoapClient = new easySoap.Client(clientParams, clientOptions);
       console.log('initialized');
 console.log(SoapClient.getAllFunctions());
         //successful initialized
-        SoapClient.once('getLines', function(data, header) {
+        SoapClient.once('getVersion', function(data, header) {
    console.log('here');
           console.log(header);
           console.log(data);
@@ -32,8 +32,9 @@ console.log(SoapClient.getAllFunctions());
         });
 
         SoapClient.call({
-            'method' : 'getLines',
+            'method' : 'getVersion',
             'params' : {
+
             }
         });
     });

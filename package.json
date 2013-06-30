@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "easysoap" : ">= 0",
     "node-soap-client": ">= 0"
   }
 }
